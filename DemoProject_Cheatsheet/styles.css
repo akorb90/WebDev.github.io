@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "League Gothic";
+    src: url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+}
+
+* {
+    font-family: "League Gothic", "Tahoma";
+    font-size: 22px;
+    background-color: green;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+table * {
+    border: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+    background-color: white !important;
+    border-spacing: 0px;
+    border-
+}
+
+thead {
+    font-size: x-large;
+    text-align: center;
+    background-color: lightgray;
+    border: solid;
+    border-width: 2px;
+}
+
+thead td {
+    font-size: 30px;
+    border-right: solid;
+}
+
+tbody td{
+    border: solid;
+    border-width: 1px;
+}
+
+#TablesHead {
+    text-align: center;
+    color: blue;
+    border-color: black ;
+}
