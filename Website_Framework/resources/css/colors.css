@@ -1,0 +1,41 @@
+/* Colors */
+.colors *{
+    margin-top: 10px;
+}
+.darkred {
+    float: left;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    background-color: rgb(134, 0, 18);
+    color: white;
+    font-size: 8px;
+    text-align: center;
+}
+
+.lightgreen {
+    float: left;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    background-color: lightgreen;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+}
+
+.lightblue {
+    float: left;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    background-color: lightblue;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+}

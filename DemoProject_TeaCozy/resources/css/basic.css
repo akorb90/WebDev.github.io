@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    border: 1px solid red;
+}
+
+/* heading section */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+}
+#logo {
+    margin-left: 20px;
+    height: 50px;
+}
+ul li {
+    display: inline-flex;
+}
+
+/* Mission section */
+.mission {
+    display: flex;
+    height: 700px;
+    width: 1200px;
+    background-image: url('../images/img-mission-background.jpg');
+    flex-flow: column;
+    justify-content: center;
+}
+.mission h4 {
+    
+}
+
+
+/* Tea section */
+.tea {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.teaheading {
+    width: 1000px;
+}
+.pictures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pictures img {
+    height: 200px;
+    width: 300px;
+}
+
+.pictures figcaption {
+    margin-top: 10px;
+}

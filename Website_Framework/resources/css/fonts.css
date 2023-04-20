@@ -1,0 +1,17 @@
+/* Fonts */
+.fonts ul li {
+    margin: 10px 0px;
+    list-style-type: none;
+}
+
+.LeagueGothic {
+    font-family: LeagueGothic;
+}
+
+.Anuphan {
+    font-family: Anuphan;
+}
+
+.Oswald {
+    font-family: Oswald;
+}
