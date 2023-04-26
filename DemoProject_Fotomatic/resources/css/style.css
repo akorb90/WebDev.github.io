@@ -1,4 +1,5 @@
-/* Universal Styles */
+/* #region Universal Styles */
+
 
 html {
   font-family: "Roboto", sans-serif;
@@ -34,7 +35,8 @@ html {
   }
 }
 
-/* Fonts */
+/* #endregion */
+/* #region Fonts */
 @font-face {
   font-family: "Roboto-Mono-Regular";
   src: url("../fonts/RobotoMono-Regular.ttf");
@@ -43,11 +45,14 @@ html {
   font-family: "Roboto-Regular";
   src: url("../fonts/Roboto-Regular.ttf");
 }
-
-/* Header */
+/* #endregion */
+/* #region Header */
 
 header {
+  display: flex;
+  justify-content:space-between;
   position: fixed;
+  height: 5.3125rem;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
@@ -56,7 +61,8 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  height: 5.3125rem;
+  width: 100%;
+  height: 100%;
 }
 
 .desktop.logo {
@@ -64,6 +70,7 @@ header .content {
   color: #4A4A4A;
   font-size: 1.5rem;
   font-family: "Roboto-Mono-Regular";
+  text-decoration: none;
 }
 
 header .logo {
@@ -85,6 +92,7 @@ nav a {
   font-size: 1rem;
   color: #4a4a4a;
   font-family: "Roboto-Regular";
+  text-decoration: none;
 }
 
 header .icon {
@@ -130,12 +138,11 @@ header .mobile {
   }
 }
 
-/* Sign Up Section */
+/* #endregion */
+/* #region Sign Up Section */
 
 #sign-up-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   height: 43.5rem;
   background-image: url("../images/banner-landingpage.jpg");
   background-size: cover;
@@ -143,7 +150,9 @@ header .mobile {
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
+  height: auto;
   margin-top: 10.625rem;
+  margin-bottom: 10.625rem;
   margin-left:  6.25rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -162,6 +171,7 @@ header .mobile {
 #sign-up-cta h1 {
   font-size: 3.125rem;
 }
+
 
 #sign-up-cta h2 {
   font-size: 2.25rem;
@@ -182,8 +192,7 @@ header .mobile {
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
-  height: 1.75rem;
-  width: 11.125rem;
+  margin-bottom: 3.5rem;
   padding: 1.25rem 7.25rem;
 }
 
@@ -232,8 +241,8 @@ header .mobile {
     font-size: 2rem;
   }
 }
-
-/* Features Section */
+/* #endregion */
+/* #region Features Section */
 
 #features-section {
   display: flex;
@@ -246,8 +255,9 @@ header .mobile {
   flex: 1;
   padding: 2rem;
   height: 39.6875rem;
-  margin: 0px 2.375rem;
+  margin: 0px 1.1875rem;
   background-color: white;
+  font-family: "Roboto";
 }
 
 .feature .image-container img {
@@ -300,12 +310,13 @@ header .mobile {
     padding: 1.25rem 1rem 0 1rem;
   }
 }
-
-/* Filters Section */
+/* #endregion */
+/* #region Filters Section */
 
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  font-family: "Roboto";
 }
 
 #filters-section .content {
@@ -327,8 +338,16 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  margin: 5rem 1% 4rem 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section .images-container img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -360,18 +379,18 @@ header .mobile {
     display: none;
   }
 }
-
-/* Quotes Section */
+/* #endregion */
+/* #region Quotes Section */
 
 #quotes-section {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -400,8 +419,8 @@ header .mobile {
     margin: auto;
   }
 }
-
-/* Footer */
+/* #endregion */
+/* #region Footer */
 
 footer {
   background-color: #9b9b9b;
@@ -412,6 +431,7 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  padding-left: 2rem;
 }
 
 footer .copyright {
@@ -423,3 +443,4 @@ footer .copyright {
     font-size: .625rem;
   }
 }
+/* #endregion */
