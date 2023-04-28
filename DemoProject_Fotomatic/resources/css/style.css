@@ -47,15 +47,21 @@ html {
 }
 /* #endregion */
 /* #region Header */
-
 header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   position: fixed;
   height: 5.3125rem;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+}
+
+nav .button {
+  padding: .1875rem .5rem;
+  background-color: #9dc20b;
+  line-height: 1.6;
+  color: white;
 }
 
 header .content {
@@ -104,8 +110,17 @@ header .icon {
 header .mobile {
   display: none;
 }
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
 
-@media only screen and (max-width: 760px) {
+  header .content {
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
@@ -129,15 +144,7 @@ header .mobile {
   header .mobile li {
     padding: 0;
   }
-
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
 }
-
 /* #endregion */
 /* #region Sign Up Section */
 
@@ -196,10 +203,9 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #sign-up-section {
-    align-items: center;
-    justify-content: center;
+
     height: 28rem;
   }
 
@@ -247,7 +253,7 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 2rem 0;
   background-color: #f3f3f3;
 }
 
@@ -255,15 +261,14 @@ header .mobile {
   flex: 1;
   padding: 2rem;
   height: 39.6875rem;
-  margin: 0px 1.1875rem;
+  margin-left: 1rem;
   background-color: white;
   font-family: "Roboto";
 }
 
 .feature .image-container img {
-  width: 90%;
-  height: 65%;
-  margin: 2rem;
+  width: 100%;
+  height: auto;
 }
 
 .feature .center .content {
@@ -430,6 +435,8 @@ footer {
 footer .content {
   color: white;
   display: flex;
+  align-items: center;
+  height: 3.875rem;
   font-size: .75rem;
   padding-left: 2rem;
 }
@@ -438,7 +445,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
