@@ -2,10 +2,8 @@ html {
     font-size: 16px;
 }
 
-
-
-
 /* #region Header */
+
 header .content {
     display: flex;
     justify-content: space-between;
@@ -33,13 +31,14 @@ header ul li{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding: 2rem;
+    
 }
     /* #region mission */
     .mission {
         display: flex;
         flex-flow: column;
         align-items: center;
+        width: 100%;
         background-color: rgb(223, 229, 236);
     }
     .mission h1 {
@@ -55,13 +54,54 @@ header ul li{
     }
     /* #endregion */
     /* #region products */
-    .products * {
+    .products {
+        display: flex;
+        flex-flow: column;
+        background-color: rgb(149, 243, 209);
+    }
+    .products h1 {
+        font-size: xx-large;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products-wrapper {
+        display: grid;
+        grid-template-areas:    "1 2"
+                                "3 4";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+        gap: 1rem;
+        width: 100%;
+    }
+    .products .product-container1{
+        grid-area: "1";
+    }
+    .product-container1 img {
+        max-width: 100%;
+        
+    }
+    .product-container2 {
+        grid-area: "2";
+    }
+    .product-container2 img {
+        max-width: 100%;
+    }
+    .product-container3 {
+        grid-area: "3";
+    }
+    .product-container3 img {
+        max-width: 100%;
+    }
+    .product-container4 {
+        grid-area: "4";
+    }
+    .product-container4 img {
         max-width: 100%;
     }
 
     /* #endregion */
-
-
     /* #region team */
     .team {
         display: flex;
@@ -74,8 +114,16 @@ header ul li{
     }
     figure figcaption {
         font-size: 2rem;
-        border: 1px dotted blue;
         text-align: center;
     }
     /* #endregion */
+/* #endregion */
+/* #region footer */
+    footer .copyright{
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: aquamarine;
+    }
 /* #endregion */
