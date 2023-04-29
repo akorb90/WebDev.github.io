@@ -1,0 +1,81 @@
+html {
+    font-size: 16px;
+}
+
+
+
+
+/* #region Header */
+header .content {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: .15rem solid black;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+/* #endregion */
+/* #region main-content*/
+.main-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 2rem;
+}
+    /* #region mission */
+    .mission {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-color: rgb(223, 229, 236);
+    }
+    .mission h1 {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .mission p {
+        padding: 1rem;
+    }
+    .mission-red {
+        color: red;
+        font-size: 2rem
+    }
+    /* #endregion */
+    /* #region products */
+    .products * {
+        max-width: 100%;
+    }
+
+    /* #endregion */
+
+
+    /* #region team */
+    .team {
+        display: flex;
+        background-color: rgb(191, 245, 183);
+    }
+    .team img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    figure figcaption {
+        font-size: 2rem;
+        border: 1px dotted blue;
+        text-align: center;
+    }
+    /* #endregion */
+/* #endregion */
