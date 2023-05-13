@@ -75,12 +75,13 @@ header ul li{
         gap: 1rem;
         width: 100%;
     }
+    .products img {
+        width: 600px;
+        height: 600px;
+    }
     .products .product-container1{
         grid-area: "1";
-    }
-    .product-container1 img {
-        max-width: 100%;
-        
+        margin-left: 2rem;
     }
     .product-container2 {
         grid-area: "2";
@@ -90,6 +91,7 @@ header ul li{
     }
     .product-container3 {
         grid-area: "3";
+        margin-left: 2rem;
     }
     .product-container3 img {
         max-width: 100%;
