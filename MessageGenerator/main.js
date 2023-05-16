@@ -1,4 +1,6 @@
+console.log("Starting")
 
+// create array containing objects with quote date
 const messages = [
     {
         ID: 1
@@ -31,3 +33,12 @@ const messages = [
         ,author: "Mahatma Gandhi "
     },
 ]
+
+const randomNumber = Math.floor(Math.random() * 6) 
+
+console.log(`Printing quote with ID ${messages[randomNumber].ID}`)
+console.log(messages[randomNumber].message)
+console.log(messages[randomNumber].author)
+
+
+console.log("Finished")
