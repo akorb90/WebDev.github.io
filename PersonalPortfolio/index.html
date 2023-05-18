@@ -7,12 +7,12 @@
     <link href="./ressources/css/style.css" rel="stylesheet">
     <!--<link href="./ressources/css/reset.css" rel="stylesheet">-->
     <!-- <script src="./ressources/js/main.js"></script>  -->
-    <title>Alexander Korb Portfolio</title>
+    <title>aKo</title>
 </head>
 <body>
     <header id="top">
         <h1>
-            Alexander Korb's Portfolio
+            aKo
         </h1>
         <nav class="navbar">
             <ul>
@@ -24,9 +24,10 @@
         </nav>
     </header>
     <main>
+        <div id="headerspacer"></div>
         <div class="personaldata">
             <span>Hide Personal data</span>
-            <button id="toggleButton">Hide</button>
+            <button id="toggleButtonInfoTable">Hide</button>
             <table id="infoTable">
                 <thead>
                     <tr>
@@ -50,21 +51,25 @@
                 </tbody>
             </table>
         </div>
-        <div class="projects">
+        <div class="projectcontainer">
             <span>Hide Projects</span>
-            <button class="hideprojects">Hide</button>
-            <h2>
-                Project 1
-            </h2>
-            <p>
-                Description of Project 1
-            </p>
-            <h2>
-                Project 2
-            </h2>
-            <p>
-                Description of Project 2
-            </p>
+            <button id="toggleButtonProjects">Hide</button>
+            <div class="project">
+                <h2>
+                    Project 1
+                </h2>
+                <p>
+                    Description of Project 1
+                </p>
+            </div>
+            <div class="project">
+                <h2>
+                    Project 2
+                </h2>
+                <p>
+                    Description of Project 2
+                </p>
+            </div>
         </div>
         <footer>
             <p>Alexander Korb</p>
@@ -73,20 +78,11 @@
         </footer>
     </main>
     <script>
-
-        const infoTable = document.getElementById('infoTable')
-        const toggleButton = document.getElementById('toggleButton')
-
-        toggleButton.addEventListener('click', function() {
-            if (infoTable.style.display === 'none') {
-                infoTable.style.display = 'block';
-                toggleButton.innerHTML="Hide"
-            } else {
-                infoTable.style.display = 'none';
-                toggleButton.innerHTML="Show"
-            }
+        document.addEventListener('DOMContentLoaded', function() {
+          var script = document.createElement('script');
+          script.src = './ressources/js/main.js';
+          document.body.appendChild(script);
         });
-
-    </script>
+      </script>
 </body>
 </html>

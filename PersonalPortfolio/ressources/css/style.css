@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     /* border: 1px solid red; */
-    background-color: rgb(248, 198, 198);
+    /* background-color: rgb(248, 198, 198); */
 }
 h1 {
     font-size: 2rem;
@@ -20,10 +20,17 @@ h3 {
 header {
     display: flex;
     justify-content: space-between;
-    /*position: absolute;*/
+    position: fixed;
     padding: 1rem 0.5rem;
+    background-image: url("../images/header_background.jpg");
+    background-size: 50%;
+    height: 5rem;
+    width: 100%
 }
-
+header h1 {
+    color: rgb(207, 181, 181);
+    padding-left: 2rem;
+}
 
 .navbar ul{
     display: flex;
@@ -43,6 +50,10 @@ header {
     background-color: rgb(42, 160, 120);
 }
 
+#headerspacer {
+    height: 5rem;
+}
+
 .personaldata {
     padding: 1rem 0.5rem;
 }
@@ -53,6 +64,6 @@ header {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem 0.5rem;
 }
