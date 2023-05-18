@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./ressources/css/style.css" rel="stylesheet">
+    <!--<link href="./ressources/css/reset.css" rel="stylesheet">-->
+    <!-- <script src="./ressources/js/main.js"></script>  -->
     <title>Alexander Korb Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>
             Alexander Korb's Portfolio
         </h1>
@@ -17,52 +19,74 @@
                 <li>Personal data</li>
                 <li>Projects</li>
                 <li>Footer</li>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
     <main>
-        <label for="hidepersonaldata"></label>
         <div class="personaldata">
-            <table>
+            <span>Hide Personal data</span>
+            <button id="toggleButton">Hide</button>
+            <table id="infoTable">
                 <thead>
                     <tr>
-                        <td>
-                            Type
-                        </td>
-                        <td>
-                            Value
-                        </td>
+                        <td>Type</td>
+                        <td>Value</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
-                            Surname
-                        </td>
-                        <td>
-                            Korb
-                        </td>
+                        <td>Surname</td>
+                        <td>Korb</td>
                     </tr>
                     <tr>
-                        <td>
-                            Firstname
-                        </td>
-                        <td>
-                            Alexander
-                        </td>
+                        <td>Firstname</td>
+                        <td>Alexander</td>
                     </tr>
                     <tr>
-                        <td>
-                            Birthday
-                        </td>
-                        <td>
-                            25.11.1990
-                        </td>
+                        <td>Birthday</td>
+                        <td>25.11.1990</td>
                     </tr>
                 </tbody>
             </table>
-
         </div>
+        <div class="projects">
+            <span>Hide Projects</span>
+            <button class="hideprojects">Hide</button>
+            <h2>
+                Project 1
+            </h2>
+            <p>
+                Description of Project 1
+            </p>
+            <h2>
+                Project 2
+            </h2>
+            <p>
+                Description of Project 2
+            </p>
+        </div>
+        <footer>
+            <p>Alexander Korb</p>
+            <a href="#">Back to Top</a>
+            <p>Copyright 2023</p>
+        </footer>
     </main>
+    <script>
+
+        const infoTable = document.getElementById('infoTable')
+        const toggleButton = document.getElementById('toggleButton')
+
+        toggleButton.addEventListener('click', function() {
+            if (infoTable.style.display === 'none') {
+                infoTable.style.display = 'block';
+                toggleButton.innerHTML="Hide"
+            } else {
+                infoTable.style.display = 'none';
+                toggleButton.innerHTML="Show"
+            }
+        });
+
+    </script>
 </body>
 </html>
